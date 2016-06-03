@@ -23,6 +23,8 @@ $ctx = stream_context_create([
 ]);
 $html = file_get_contents('https://google.com/', false, $ctx);
 
+echo $html;
+
 // Requiring TLS 1.1 or 1.2:
 $ctx = stream_context_create([
     'ssl' => [
@@ -30,7 +32,10 @@ $ctx = stream_context_create([
                            STREAM_CRYPTO_METHOD_TLSv1_2_CLIENT,
     ],
 ]);
-$html = file_get_contents('https://google.com/', false, $ctx);
+$html = file_get_contents('https://facebook.com/', false, $ctx);
+
+echo $html;
+
 ?>
 </body>
 </html>
