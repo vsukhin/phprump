@@ -15,7 +15,7 @@ running on a
 Try <a href="phpinfo.php">phpinfo()</a>.
 <?php
 
-echo file_get_contents('http://173.255.118.47');
+echo file_get_contents('http://google.com');
 
 ?>
 </body>
